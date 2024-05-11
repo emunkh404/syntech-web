@@ -1,5 +1,6 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import { Linkedin, Facebook, X, Instagram } from "react-bootstrap-icons";
+import "./Footer.css";
 function Footer() {
   return (
     <div className="footer">
@@ -8,7 +9,12 @@ function Footer() {
           <div className="col-md-3">
             <h4>About Us</h4>
             <p>SynTech</p>
-            <p>SynTech ERP Software Solutions is a CRM and ERP software provider based in Fullchurch, Virginia, with over 1000 users and growing. Our demonstrated expertise lies in deploying the full suite of integrated Odoo software options.</p>
+            <p>
+              SynTech ERP Software Solutions is a CRM and ERP software provider
+              based in Fullchurch, Virginia, with over 1000 users and growing.
+              Our demonstrated expertise lies in deploying the full suite of
+              integrated Odoo software options.
+            </p>
           </div>
           <div className="col-md-3">
             <h4>Modules</h4>
@@ -46,6 +52,19 @@ function Footer() {
             <p>Email: info@syntech.com</p>
             <p>Phone: (301) 276-7788</p>
           </div>
+        </div>
+      </div>
+      <hr />
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <p>
+          Privacy Policy / {new Date().getFullYear()} SynTech LLC. All rights
+          reserved
+        </p>
+        <div>
+          <Linkedin style={{ margin: "10px", color: "#0e76a8" }} />
+          <Facebook style={{ margin: "10px", color: "#3b5998" }} />
+          <X style={{ margin: "10px", color: "white" }} />
+          <Instagram style={{ margin: "10px", color: "#e4405f" }} />
         </div>
       </div>
     </div>

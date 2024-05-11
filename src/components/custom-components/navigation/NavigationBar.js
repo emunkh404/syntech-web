@@ -14,7 +14,7 @@ export default function NavigationBar() {
       <Navbar className="nav-top" variant="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
         <Container>
           <div className="nav-top-contact-text">
-            <p className="nav-text">📞 Call Us: (301)276-7788</p>
+            <p className="nav-text">📞 Call Us: (301) 276-7788</p>
             <p className="nav-text">📲 Live Chat</p>
           </div>
         </Container>
@@ -58,7 +58,7 @@ export default function NavigationBar() {
               <li>🔹Training & Support</li>
             </ul>
             <div className="nav-contact">
-              <h4>Contact Us: (301)276-7788</h4>
+              <h4>Contact Us: (301) 276-7788</h4>
               <div className="nav-buttons">
                 <Button variant="outline-success">SCHEDULE A DEMO</Button>
                 <Button variant="outline-info">CHECK OUR APPS</Button>

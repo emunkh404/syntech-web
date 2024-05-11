@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import './Cards.css'; // Make sure to include this
+import "./Cards.css"; // Make sure to include this
 
 export default function Cards() {
   return (
@@ -9,10 +9,23 @@ export default function Cards() {
       <Card>
         <Card.Img variant="top" src="/syntechicon.jpg" />
         <Card.Body>
-          <Card.Title>CRM</Card.Title>
+          <Card.Title>eCommerce</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            A smart interface that any retail company can use without
+            difficulty.
+          </Card.Text>
+        </Card.Body>
+        <Card.Footer>
+          <Button variant="info">View</Button>
+        </Card.Footer>
+      </Card>
+      <Card>
+        <Card.Img variant="top" src="/syntechicon.jpg" />
+        <Card.Body>
+          <Card.Title>Sales</Card.Title>
+          <Card.Text>
+            Send clear and complete quotations to your prospects. Add product
+            descriptions, beautiful images, and …
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -24,8 +37,8 @@ export default function Cards() {
         <Card.Body>
           <Card.Title>CRM</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            An intuitive user interface designed for sales. A Dashboard for a
+            better overview of the sales activities
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -35,10 +48,10 @@ export default function Cards() {
       <Card>
         <Card.Img variant="top" src="/syntechicon.jpg" />
         <Card.Body>
-          <Card.Title>CRM</Card.Title>
+          <Card.Title>Accounting</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            Invoices are easy to create, beautiful and full featured. (payment
+            terms, multiple taxes, disc…
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -48,10 +61,10 @@ export default function Cards() {
       <Card>
         <Card.Img variant="top" src="/syntechicon.jpg" />
         <Card.Body>
-          <Card.Title>CRM</Card.Title>
+          <Card.Title>Project</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            A fast user interface designed for modern project management. Get
+            all the information you need …
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -61,23 +74,10 @@ export default function Cards() {
       <Card>
         <Card.Img variant="top" src="/syntechicon.jpg" />
         <Card.Body>
-          <Card.Title>CRM</Card.Title>
+          <Card.Title>Inventory</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <Button variant="info">View</Button>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="/syntechicon.jpg" />
-        <Card.Body>
-          <Card.Title>CRM</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
+            The unique Odoo double entry inventory management allows full
+            traceability from the supplier to the …
           </Card.Text>
         </Card.Body>
         <Card.Footer>
