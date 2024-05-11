@@ -1,0 +1,39 @@
+.featured-container {
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .featured-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .featured-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10em;
+  }
+  
+  .featured-card {
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .featured-image {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .featured-card {
+      width: calc(50% - 2rem);
+    }
+  }
+  

@@ -5,7 +5,7 @@ export default function GetStartNow() {
   return (
     <div>
       <Navbar className="nav-top" variant="dark">
-        <div style={{color: "white", fontSize: "2rem", margin: "0 0.5rem", padding:"0.5em"}}>
+        <div style={{color: "white", fontSize: "2rem", margin: "0 0.5rem", padding:"0 5em"}}>
           <p>
             As an Odoo Partner, our knowledge, and best practices have helped
             industry leaders run their businesses smartly and efficiently.

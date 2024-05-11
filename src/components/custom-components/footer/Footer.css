@@ -1,0 +1,25 @@
+.footer {
+    background-color: #002a3a; /* Dark blue background */
+    color: #ffffff; /* White text */
+    padding: 40px 0;
+    font-size: 14px;
+  }
+  
+  .footer h4 {
+    color: #ffffff; /* White text for headers */
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    color: #b0c4de; /* Light steel blue for paragraph text */
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    padding-bottom: 10px;
+  }
+  

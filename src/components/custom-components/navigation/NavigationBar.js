@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -6,9 +7,11 @@ import Image from "react-bootstrap/Image";
 import "./nav.css";
 
 export default function NavigationBar() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <div>
-      <Navbar className="nav-top" variant="dark">
+      <Navbar className="nav-top" variant="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
         <Container>
           <div className="nav-top-contact-text">
             <p className="nav-text">📞 Call Us: (301)276-7788</p>
@@ -16,7 +19,7 @@ export default function NavigationBar() {
           </div>
         </Container>
       </Navbar>
-      <Navbar bg="dark" variant="dark" className="nav-middle">
+      <Navbar bg="dark" variant="dark" className="nav-middle" expand="lg">
         <Container className="justify-content-center">
           <Navbar.Brand href="#home">
             <Image
@@ -27,18 +30,21 @@ export default function NavigationBar() {
             />
             <span className="nav-logo-text">SynTech</span>
           </Navbar.Brand>
-          <Nav>
-            <Nav.Link href="#services">Services</Nav.Link>
-            <Nav.Link href="#our-apps">Our apps</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <Nav.Link href="#about-Us">About Us</Nav.Link>
-            <Nav.Link href="#contact-us">Contact Us</Nav.Link>
-          </Nav>
+          <Navbar.Toggle aria-controls="navbar-nav" onClick={() => setExpanded(!expanded)} />
+          <Navbar.Collapse id="navbar-nav" className="justify-content-end" expanded={expanded}>
+            <Nav className="ml-auto">
+              <Nav.Link href="#services">Services</Nav.Link>
+              <Nav.Link href="#our-apps">Our apps</Nav.Link>
+              <Nav.Link href="#pricing">Pricing</Nav.Link>
+              <Nav.Link href="#about-Us">About Us</Nav.Link>
+              <Nav.Link href="#contact-us">Contact Us</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Navbar className="nav-bottom" variant="dark">
+      <Navbar className="nav-bottom" variant="dark" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
         <Container>
-          <div className="nav-bottom">
+          <div className="nav-bottom" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
             <h1>
               Free Demo Applications for ONE Month{" "}
               <Button variant="outline-info">Read More</Button>
