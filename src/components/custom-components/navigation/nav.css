@@ -1,0 +1,53 @@
+.nav-text {
+    color: white;   
+    margin-right: 1em;
+}
+
+.nav-top-contact-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+}
+.nav-top{
+    background-color: #22222e;
+}
+.nav-middle {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-logo-text {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 0.5em;
+}
+
+.nav-bottom {
+    color: white;
+    text-align: left;
+    background-color: #22222e;
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.nav-bottom-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;    
+}
+.nav-buttons {
+    display: flex; /* This will place all child elements (the buttons) inline */
+    gap: 10px; /* Adds a small gap between the buttons */
+}
+
+.nav-contact h4 {
+    margin-bottom: 0.5rem; /* Ensures a little space between the text and buttons if needed */
+}
