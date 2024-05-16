@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -19,12 +20,12 @@ export default function NavigationBar() {
           </div>
         </Container>
       </Navbar>
-      <Navbar bg="dark" variant="dark" className="nav-middle" expand="lg">
+      <Navbar  variant="dark" className="nav-middle" expand="lg">
         <Container className="justify-content-center">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand as={NavLink} to="/">
             <Image
               alt="SynTech-icon"
-              src="/syntechicon.jpg"
+              src="/syntechicon.png"
               height={40}
               roundedCircle
             />
@@ -33,11 +34,11 @@ export default function NavigationBar() {
           <Navbar.Toggle aria-controls="navbar-nav" onClick={() => setExpanded(!expanded)} />
           <Navbar.Collapse id="navbar-nav" className="justify-content-end" expanded={expanded}>
             <Nav className="ml-auto">
-              <Nav.Link href="#services">Services</Nav.Link>
-              <Nav.Link href="#our-apps">Our apps</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-              <Nav.Link href="#about-Us">About Us</Nav.Link>
-              <Nav.Link href="#contact-us">Contact Us</Nav.Link>
+            <NavLink to="/services" className="nav-link">Services</NavLink>
+              <NavLink to="/our-apps" className="nav-link">Our apps</NavLink>
+              <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
+              <NavLink to="/about-us" className="nav-link">About Us</NavLink> {/* Update this line */}
+              <NavLink to="/contact-us" className="nav-link">Contact Us</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>

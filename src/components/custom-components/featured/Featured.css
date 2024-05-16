@@ -17,23 +17,25 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 10em;
+    margin: 0 auto; /* Center the cards horizontally */
+    max-width: 1200px; /* Adjust the maximum width as needed */
   }
   
   .featured-card {
-    width: calc(33.33% - 2rem);
+    flex: 1; /* Make the cards flexible */
+    width: calc(33.33% - 2rem); /* Set initial width */
     margin: 1rem;
-  }
-  
-  @media (max-width: 768px) {
-    .featured-image {
-      display: none;
-    }
   }
   
   @media (max-width: 991px) {
     .featured-card {
-      width: calc(50% - 2rem);
+      width: calc(50% - 2rem); /* Adjust width for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .featured-card {
+      width: calc(100% - 2rem); /* Adjust width for small screens */
     }
   }
   

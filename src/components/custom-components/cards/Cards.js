@@ -7,12 +7,12 @@ export default function Cards() {
     <div className="card-container">
       {/* Repeat your Card component as needed */}
       <Card>
-        <Card.Img variant="top" src="/syntechicon.jpg" />
+        <Card.Img variant="top" src="/ecommerce.png" />
         <Card.Body>
           <Card.Title>eCommerce</Card.Title>
           <Card.Text>
-            A smart interface that any retail company can use without
-            difficulty.
+            A user-friendly interface suitable for retail businesses of any
+            size.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -20,12 +20,12 @@ export default function Cards() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="/syntechicon.jpg" />
+        <Card.Img variant="top" src="/sales.png" />
         <Card.Body>
           <Card.Title>Sales</Card.Title>
           <Card.Text>
-            Send clear and complete quotations to your prospects. Add product
-            descriptions, beautiful images, and …
+            Efficiently send detailed and attractive quotations to potential
+            customers, including product descriptions and images.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -33,12 +33,12 @@ export default function Cards() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="/syntechicon.jpg" />
+        <Card.Img variant="top" src="/crm.png" />
         <Card.Body>
           <Card.Title>CRM</Card.Title>
           <Card.Text>
-            An intuitive user interface designed for sales. A Dashboard for a
-            better overview of the sales activities
+            Intuitive interface tailored for sales teams, offering a
+            comprehensive dashboard for better insight into sales activities.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -46,12 +46,12 @@ export default function Cards() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="/syntechicon.jpg" />
+        <Card.Img variant="top" src="/accounting.png" />
         <Card.Body>
           <Card.Title>Accounting</Card.Title>
           <Card.Text>
-            Invoices are easy to create, beautiful and full featured. (payment
-            terms, multiple taxes, disc…
+            Easily generate professional invoices with advanced features like
+            payment terms, multiple taxes, and discounts.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -59,12 +59,12 @@ export default function Cards() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="/syntechicon.jpg" />
+        <Card.Img variant="top" src="/project.png" />
         <Card.Body>
           <Card.Title>Project</Card.Title>
           <Card.Text>
-            A fast user interface designed for modern project management. Get
-            all the information you need …
+            Streamlined interface for contemporary project management, providing
+            all necessary information at your fingertips.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
@@ -72,12 +72,12 @@ export default function Cards() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="/syntechicon.jpg" />
+        <Card.Img variant="top" src="/inventory.png" />
         <Card.Body>
           <Card.Title>Inventory</Card.Title>
           <Card.Text>
-            The unique Odoo double entry inventory management allows full
-            traceability from the supplier to the …
+            Odoo's double-entry inventory management ensures complete
+            traceability from supplier to customer.
           </Card.Text>
         </Card.Body>
         <Card.Footer>

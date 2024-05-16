@@ -1,0 +1,25 @@
+.about-section {
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    color: aqua;
+    text-align: center;
+    min-height: 100vh; 
+  }
+  
+  .about-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    margin: auto; 
+    max-width: 90%;
+    font-size: 1.7rem; 
+  }
+  
+  .about-items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+  }
+  

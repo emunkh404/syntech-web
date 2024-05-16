@@ -8,7 +8,7 @@ import Image from "react-bootstrap/Image";
 import QuoteForm from "../../components/custom-components/quote-form/QuoteForm";
 import Subscribe from "../../components/custom-components/subscribe/Subscribe";
 import ContactInfo from "../../components/custom-components/contact-info/ContactInfo";
-import "./Home.css"; // Assuming you have created a Home.css
+import "./Home.css";
 import Footer from "../../components/custom-components/footer/Footer";
 
 export default function Home() {

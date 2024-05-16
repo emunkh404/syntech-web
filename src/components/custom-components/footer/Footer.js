@@ -55,15 +55,15 @@ function Footer() {
         </div>
       </div>
       <hr />
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="footer-policy">
         <p>
           Privacy Policy / {new Date().getFullYear()} SynTech LLC. All rights
           reserved
         </p>
-        <div>
+        <div >
           <Linkedin style={{ margin: "10px", color: "#0e76a8" }} />
           <Facebook style={{ margin: "10px", color: "#3b5998" }} />
-          <X style={{ margin: "10px", color: "white" }} />
+          <X style={{ margin: "10px", color: "white", fontSize: 20}} />
           <Instagram style={{ margin: "10px", color: "#e4405f" }} />
         </div>
       </div>
