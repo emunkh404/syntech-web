@@ -1,0 +1,73 @@
+/* Pricing.module.css */
+.pricingContainer {
+    padding: 2rem 0;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .pricingCard {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .highlightCard {
+    border: 2px solid #007bff;
+    background-color: #f8f9fa;
+  }
+  
+  .cardTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #22222e;   
+  }
+  
+  .price {
+    font-size: 4rem;
+    color: #007bff;      
+  }
+  
+  .orderLink {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .welcomeSection {
+    margin-top: 4rem;
+  }
+  
+  .welcomeSection h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .welcomeSection h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  
+  .welcomeSection h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+  }
+  
+  .welcomeSection p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  

@@ -1,0 +1,36 @@
+/* Footer.module.css */
+.footer {
+    background-color: #22222e;
+    color: #f8f9fa;
+    padding: 2rem 0;
+  }
+  
+  .footer h4 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer p {
+    color: #b0c4de;
+  }
+  
+  .footerPolicy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .footerPolicy p {
+    margin: 0;
+  }
+  

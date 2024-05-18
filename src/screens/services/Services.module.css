@@ -1,0 +1,88 @@
+/* Services.module.css */
+.servicesContainer {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.verticalTabs {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.tab-content {
+  flex: 1;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #22222e;
+  color: white;
+  text-align: center;
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 2rem;
+}
+
+.serviceImage {
+  max-width: 50%;
+  height: auto;
+  margin-left: 2rem;
+}
+
+.serviceText {
+  flex: 1;
+  max-width: 50%;
+}
+
+.serviceText h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.serviceText p {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 2rem;
+}
+
+.connectLink {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .verticalTabs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .serviceContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .serviceImage {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+
+  .serviceText {
+    max-width: 100%;
+  }
+}

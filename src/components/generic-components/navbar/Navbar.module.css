@@ -1,0 +1,29 @@
+/* Navbar.module.css */
+.navTop {
+  background-color: #22222e;
+}
+
+.navText {
+  color: white;
+  margin-right: 1em;
+}
+
+.navTopContactText {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+.navMiddle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.navLogoText {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}

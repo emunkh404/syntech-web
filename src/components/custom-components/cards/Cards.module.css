@@ -1,0 +1,11 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem; /* Adjust the gap to your liking */
+}
+
+.card {
+  flex: 1 1 300px; /* Adjust the min-width to switch from 3 to 2 to 1 card per row */
+}

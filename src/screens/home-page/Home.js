@@ -8,30 +8,30 @@ import Image from "react-bootstrap/Image";
 import QuoteForm from "../../components/custom-components/quote-form/QuoteForm";
 import Subscribe from "../../components/custom-components/subscribe/Subscribe";
 import ContactInfo from "../../components/custom-components/contact-info/ContactInfo";
-import "./Home.css";
+import styles from  "./Home.module.css";
 import Footer from "../../components/custom-components/footer/Footer";
 
 export default function Home() {
   return (
     <div>
-      <div className="relative-container">
-        <Image alt="Featured banner" src="/special.png" className="banner-image" />
+      <div className={styles.relativeContainer}>
+        <Image alt="Featured banner" src="/special.png" className={styles.bannerImage} />
         <NavigationBar />
       </div>
-      <h1>Your Business Automation Solutions !!!</h1>
-      <section className="content-section">
+      <h1 className={styles.homeH1}> Your Business Automation Solutions !!!</h1>
+      <section className={styles.contentSection}>
         <Cards />
       </section>
-      <section className="content-section long-banner">
+      <section className={`${styles.contentSection} ${styles.longBanner}`}>
         <GetStartNow />
       </section>
-      <section className="content-section">
+      <section className={styles.contentSection}>
         <TabColumns />
       </section>
-      <section className="content-section long-banner">
+      <section className={`${styles.contentSection} ${styles.longBanner}`}>
         <Featured />
       </section>
-      <section className="content-section">
+      <section className={styles.contentSection}>
         <QuoteForm/>
       </section>
       <Subscribe/>

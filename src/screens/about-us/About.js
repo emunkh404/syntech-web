@@ -1,83 +1,24 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Image from "react-bootstrap/Image";
-import "./About.css";
-import Footer from "../../components/custom-components/footer/Footer";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import CustomNavbar from "../../components/generic-components/navbar/CustomNavbar"; // Import the CustomNavbar component
+import Footer from "../../components/generic-components/footer/CustomFooter";
+import styles from "./About.module.css";
 
 function About() {
-  const [expanded, setExpanded] = useState(false);
-
   return (
     <>
+      <CustomNavbar /> {/* Use the CustomNavbar component */}
       <div
-        className="about-section"
+        className={styles.aboutSection}
         style={{ backgroundImage: 'url("/about-bg.png")' }}
       >
-        <Navbar className="nav-top" variant="dark">
-          <Container>
-            <div className="nav-top-contact-text">
-              <p className="nav-text">📞 Call Us: (301) 276-7788</p>
-              <p className="nav-text">📲 Live Chat</p>
-            </div>
-          </Container>
-        </Navbar>
-        <Navbar
-          variant="dark"
-          className="nav-middle"
-          expand="lg"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
-        >
-          <Container className="justify-content-center">
-            <Navbar.Brand as={NavLink} to="/">
-              <Image
-                alt="SynTech-icon"
-                src="/syntechicon.png"
-                height={40}
-                roundedCircle
-              />
-              <span className="nav-logo-text">SynTech</span>
-            </Navbar.Brand>
-            <Navbar.Toggle
-              aria-controls="navbar-nav"
-              onClick={() => setExpanded(!expanded)}
-            />
-            <Navbar.Collapse
-              id="navbar-nav"
-              className="justify-content-end"
-              expanded={expanded}
-            >
-              <Nav className="ml-auto">
-                <NavLink to="/services" className="nav-link">
-                  Services
-                </NavLink>
-                <NavLink to="/our-apps" className="nav-link">
-                  Our apps
-                </NavLink>
-                <NavLink to="/pricing" className="nav-link">
-                  Pricing
-                </NavLink>
-                <NavLink to="/about-us" className="nav-link">
-                  About Us
-                </NavLink>
-                <NavLink to="/contact-us" className="nav-link">
-                  Contact Us
-                </NavLink>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
         <Container>
           <Row
             className="justify-content-center align-items-center"
             style={{ minHeight: "100vh" }}
           >
             <Col md={8}>
-              <div className="about-content">
+              <div className={styles.aboutContent}>
                 <h2>About Syntech LLC</h2>
                 <p>
                   Syntech LLC is dedicated to transforming business operations
@@ -99,7 +40,7 @@ function About() {
           </Row>
         </Container>
       </div>
-      <Footer />
+      <Footer /> {/* Use the Footer component */}
     </>
   );
 }

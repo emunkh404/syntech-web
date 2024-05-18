@@ -1,55 +1,60 @@
-.nav-text {
-    color: white;   
+/* nav.module.css */
+.navTop {
+    background-color: #22222e;
+  }
+  
+  .navText {
+    color: white;
     margin-right: 1em;
-}
-
-.nav-top-contact-text {
+  }
+  
+  .navTopContactText {
     display: flex;
     justify-content: start;
     align-items: center;
     width: 100%;
-}
-.nav-top{
-    background-color: #22222e;
-}
-.nav-middle {
+  }
+  
+  .navMiddle {
     display: flex;
     justify-content: center;
     width: 100%;
     font-weight: bold;
-}
-
-.nav-logo-text {
+  }
+  
+  .navLogoText {
     font-weight: bold;
     font-size: 1.5em;
     margin-left: 0.5em;
-}
-
-.nav-bottom {
+  }
+  
+  .navBottom {
     color: white;
     text-align: left;
     background-color: #22222e;
     padding-top: 5rem;
     margin-bottom: 10rem;
     margin-left: 1rem;
-}
-
-.nav-bottom-list {
+  }
+  
+  .navBottomList {
     list-style-type: none;
     padding-left: 0;
-}
-
-.nav-contact {
+  }
+  
+  .navContact {
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 10px;    
-}
-.nav-buttons {
-    display: flex; /* This will place all child elements (the buttons) inline */
-    gap: 10px; /* Adds a small gap between the buttons */
-}
-
-.nav-contact h4 {
-    margin-bottom: 0.5rem; /* Ensures a little space between the text and buttons if needed */
-}
+    gap: 10px;
+  }
+  
+  .navButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navContact h4 {
+    margin-bottom: 0.5rem;
+  }
+  

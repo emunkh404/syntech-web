@@ -1,12 +1,13 @@
+import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import "./Cards.css"; // Make sure to include this
+import styles from "./Cards.module.css"; // Make sure to include this
 
 export default function Cards() {
   return (
-    <div className="card-container">
+    <div className={styles.cardContainer}>
       {/* Repeat your Card component as needed */}
-      <Card>
+      <Card className={styles.card}>
         <Card.Img variant="top" src="/ecommerce.png" />
         <Card.Body>
           <Card.Title>eCommerce</Card.Title>
@@ -19,7 +20,7 @@ export default function Cards() {
           <Button variant="info">View</Button>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className={styles.card}>
         <Card.Img variant="top" src="/sales.png" />
         <Card.Body>
           <Card.Title>Sales</Card.Title>
@@ -32,7 +33,7 @@ export default function Cards() {
           <Button variant="info">View</Button>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className={styles.card}>
         <Card.Img variant="top" src="/crm.png" />
         <Card.Body>
           <Card.Title>CRM</Card.Title>
@@ -45,7 +46,7 @@ export default function Cards() {
           <Button variant="info">View</Button>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className={styles.card}>
         <Card.Img variant="top" src="/accounting.png" />
         <Card.Body>
           <Card.Title>Accounting</Card.Title>
@@ -58,7 +59,7 @@ export default function Cards() {
           <Button variant="info">View</Button>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className={styles.card}>
         <Card.Img variant="top" src="/project.png" />
         <Card.Body>
           <Card.Title>Project</Card.Title>
@@ -71,7 +72,7 @@ export default function Cards() {
           <Button variant="info">View</Button>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className={styles.card}>
         <Card.Img variant="top" src="/inventory.png" />
         <Card.Body>
           <Card.Title>Inventory</Card.Title>
@@ -83,8 +84,7 @@ export default function Cards() {
         <Card.Footer>
           <Button variant="info">View</Button>
         </Card.Footer>
-      </Card>
-      {/* Include other cards similarly */}
+      </Card>      
     </div>
   );
 }
