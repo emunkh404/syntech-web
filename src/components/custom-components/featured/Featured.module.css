@@ -1,7 +1,9 @@
-/* Featured.module.css */
 .featuredContainer {
   position: relative;
   max-width: 100%;
+  padding: 2rem 0; /* Add padding to separate from other content */
+  background-color: #f8f9fa; /* Light background color */
+  overflow: hidden; /* Ensure background image covers properly */
 }
 
 .featuredImage {
@@ -11,7 +13,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1;
+  z-index: 1;
+  opacity: 0.8; /* Adjust the opacity to ensure content is readable */
 }
 
 .featuredCards {
@@ -20,22 +23,69 @@
   flex-wrap: wrap;
   margin: 0 auto; /* Center the cards horizontally */
   max-width: 1200px; /* Adjust the maximum width as needed */
+  position: relative; /* Ensure proper stacking */
+  z-index: 1; /* Ensure content is above the background image */
 }
 
 .featuredCard {
-  flex: 1; /* Make the cards flexible */
-  width: calc(33.33% - 2rem); /* Set initial width */
+  flex: 1;
+  width: calc(33.33% - 2rem);
   margin: 1rem;
+  background-color: #c4f2f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featuredCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardBody {
+  text-align: center;
+  padding: 2rem;
+}
+
+.icon {
+  color: #266daf; /* SynTech primary blue color */
+  margin-bottom: 1rem;
+}
+
+.readMoreLink {
+  color: #266daf;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.readMoreLink:hover {
+  color: #0056b3; /* Darker shade for hover */
 }
 
 @media (max-width: 991px) {
   .featuredCard {
-    width: calc(50% - 2rem); /* Adjust width for medium screens */
+    width: calc(50% - 2rem);
   }
 }
 
 @media (max-width: 768px) {
   .featuredCard {
-    width: calc(100% - 2rem); /* Adjust width for small screens */
+    width: calc(100% - 2rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .featuredContainer {
+    padding: 1rem 0; /* Reduce padding for small screens */
+  }
+
+  .cardBody {
+    padding: 1rem;
+  }
+
+  .readMoreLink {
+    margin-top: 0.5rem;
   }
 }

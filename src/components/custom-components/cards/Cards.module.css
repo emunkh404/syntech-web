@@ -8,4 +8,24 @@
 
 .card {
   flex: 1 1 300px; /* Adjust the min-width to switch from 3 to 2 to 1 card per row */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(0.95); /* Slight zoom out effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow for better visual effect */
+}
+
+.cardFooter {
+  text-align: center; /* Center align the footer content */
+}
+
+.cardFooter Button {
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for the button */
+}
+
+.cardFooter Button:hover {
+  background-color: #0056b3; /* Change button color on hover */
+  transform: scale(1.05); /* Slight zoom out effect */
+  color: azure;
 }

@@ -1,61 +1,106 @@
-/* nav.module.css */
 .navTop {
-    background-color: #22222e;
-  }
-  
-  .navText {
-    color: white;
-    margin-right: 1em;
-  }
-  
-  .navTopContactText {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .navMiddle {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    font-weight: bold;
-  }
-  
-  .navLogoText {
-    font-weight: bold;
-    font-size: 1.5em;
-    margin-left: 0.5em;
-    text-shadow: 2px 2px 2px aqua;
-  }
-  
-  .navBottom {
-    color: white;
-    text-align: left;
-    background-color: #22222e;
-    padding-top: 5rem;
-    margin-bottom: 10rem;
-    margin-left: 1rem;
-  }
-  
-  .navBottomList {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .navContact {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
-  }
-  
-  .navButtons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .navContact h4 {
-    margin-bottom: 0.5rem;
-  }
-  
+  background-color: #22222e;
+}
+
+.navText {
+  color: white;
+  margin-right: 1em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navText:hover {
+  color: #b0c4de; /* Lighter color */
+  transform: scale(1.1); /* Slightly increase size */
+}
+
+.navTopContactText {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+.navMiddle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-weight: bold;
+}
+
+.navLogoText {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  text-shadow: 2px 2px 2px aqua;
+}
+
+.navLogoText:hover {
+  color: rgb(182, 221, 231); /* Lighter color */
+  transform: scale(1.3);
+  text-shadow: 1px 1px 2px #f8f8f8;
+}
+
+.navBottom {
+  color: white;
+  text-align: left;
+  background-color: #22222e;
+  padding-top: 5rem;
+  margin-bottom: 10rem;
+  margin-left: 1rem;
+}
+
+.navBottomList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navBottomList li {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navBottomList li:hover {
+  color: #b0c4de; /* Lighter color */
+  transform: scale(1.1); /* Slightly increase size */
+}
+
+.navContact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.navButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.navButtons Button {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navButtons Button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+  transform: scale(1.05); /* Slight zoom out effect */
+}
+
+.navContact h4 {
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navContact h4:hover {
+  color: #b0c4de; /* Lighter color */
+  transform: scale(1.1); /* Slightly increase size */
+}
+
+.navLink {
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navLink:hover {
+  color: #b0c4de; /* Lighter color */
+  transform: scale(1.25);
+  text-shadow: 1px 1px 2px aqua;
+}

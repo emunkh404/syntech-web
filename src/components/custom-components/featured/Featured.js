@@ -2,10 +2,13 @@ import React from "react";
 import Image from "react-bootstrap/Image";
 import Nav from "react-bootstrap/Nav";
 import Card from "react-bootstrap/Card";
-import { PeopleFill, ClipboardData, CalculatorFill } from 'react-bootstrap-icons'; // Import specific icons
+import { Link } from "react-router-dom";
 import styles from "./Featured.module.css";
+import services from "../../../data/services"
 
 export default function Featured() {
+ 
+
   return (
     <div className={styles.featuredContainer}>
       <Image
@@ -14,36 +17,18 @@ export default function Featured() {
         className={styles.featuredImage}
       />
       <div className={styles.featuredCards}>
-        <Card className={styles.featuredCard}>
-          <Card.Body className={styles.cardBody}>
-            <PeopleFill size={50} className={styles.icon} /> 
-            <Card.Title>CRM</Card.Title>
-            <Card.Text>
-              Manage customer relationships efficiently.
-            </Card.Text>
-            <Nav.Link href="#crm">READ MORE</Nav.Link>
-          </Card.Body>
-        </Card>
-        <Card className={styles.featuredCard}>
-          <Card.Body className={styles.cardBody}>
-            <ClipboardData size={50} className={styles.icon} /> 
-            <Card.Title>Project</Card.Title>
-            <Card.Text>
-              Streamline your project management processes.
-            </Card.Text>
-            <Nav.Link href="#project">READ MORE</Nav.Link>
-          </Card.Body>
-        </Card>
-        <Card className={styles.featuredCard}>
-          <Card.Body className={styles.cardBody}>
-            <CalculatorFill size={50} className={styles.icon} /> 
-            <Card.Title>Accounting</Card.Title>
-            <Card.Text>
-              Simplify financial tasks and reporting.
-            </Card.Text>
-            <Nav.Link href="#accounting">READ MORE</Nav.Link>
-          </Card.Body>
-        </Card>      
+        {services.map((service) => (
+          <Card key={service.key} className={styles.featuredCard}>
+            <Card.Body className={styles.cardBody}>
+              {service.icon}
+              <Card.Title>{service.title}</Card.Title>
+              <Card.Text>{service.description}</Card.Text>
+              <Nav.Link as={Link} to={`/services?service=${service.key}`} className={styles.readMoreLink}>
+                READ MORE
+              </Nav.Link>
+            </Card.Body>
+          </Card>
+        ))}
       </div>
     </div>
   );

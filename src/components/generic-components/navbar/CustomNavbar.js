@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Image from "react-bootstrap/Image";
-import styles from "./Navbar.module.css";
+import styles from "./CustomNavbar.module.css";
 
 function CustomNavbar() {
   const [expanded, setExpanded] = useState(false);
@@ -20,10 +20,10 @@ function CustomNavbar() {
         </Container>
       </Navbar>
       <Navbar
-        variant="dark"
+        
         className={styles.navMiddle}
         expand="lg"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.1)" }}
       >
         <Container className="justify-content-center">
           <Navbar.Brand as={NavLink} to="/">
@@ -45,19 +45,19 @@ function CustomNavbar() {
             expanded={expanded}
           >
             <Nav className="ml-auto">
-              <NavLink to="/services" className="nav-link">
+              <NavLink to="/services" className={`nav-link ${styles.navLink}`}>
                 Services
               </NavLink>
-              <NavLink to="/our-apps" className="nav-link">
+              <NavLink to="/our-apps" className={`nav-link ${styles.navLink}`}>
                 Our apps
               </NavLink>
-              <NavLink to="/pricing" className="nav-link">
+              <NavLink to="/pricing" className={`nav-link ${styles.navLink}`}>
                 Pricing
               </NavLink>
-              <NavLink to="/about-us" className="nav-link">
+              <NavLink to="/about-us" className={`nav-link ${styles.navLink}`}>
                 About Us
               </NavLink>
-              <NavLink to="/contact-us" className="nav-link">
+              <NavLink to="/contact-us" className={`nav-link ${styles.navLink}`}>
                 Contact Us
               </NavLink>
             </Nav>

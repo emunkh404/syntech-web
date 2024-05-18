@@ -33,12 +33,12 @@ export default function NavigationBar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" onClick={() => setExpanded(!expanded)} />
           <Navbar.Collapse id="navbar-nav" className="justify-content-end" expanded={expanded}>
-            <Nav className="ml-auto">
-              <NavLink to="/services" className="nav-link">Services</NavLink>
-              <NavLink to="/our-apps" className="nav-link">Our apps</NavLink>
-              <NavLink to="/pricing" className="nav-link">Pricing</NavLink>
-              <NavLink to="/about-us" className="nav-link">About Us</NavLink>
-              <NavLink to="/contact-us" className="nav-link">Contact Us</NavLink>
+            <Nav className="ml-auto nav-link">
+              <NavLink to="/services" className={`nav-link ${styles.navLink}`}>Services</NavLink>
+              <NavLink to="/our-apps" className={`nav-link ${styles.navLink}`}>Our apps</NavLink>
+              <NavLink to="/pricing" className={`nav-link ${styles.navLink}`}>Pricing</NavLink>
+              <NavLink to="/about-us" className={`nav-link ${styles.navLink}`}>About Us</NavLink>
+              <NavLink to="/contact-us" className={`nav-link ${styles.navLink}`}>Contact Us</NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -48,7 +48,9 @@ export default function NavigationBar() {
           <div className={styles.navBottom} style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
             <h1>
               Free Demo Applications for ONE Month{" "}
-              <Button variant="outline-info">Read More</Button>
+              <NavLink to="/contact-us">
+                <Button variant="outline-info">Request Demo</Button>
+              </NavLink>
             </h1>
             <h3>How we do it</h3>
             <ul className={styles.navBottomList}>
@@ -60,8 +62,12 @@ export default function NavigationBar() {
             <div className={styles.navContact}>
               <h4>Contact Us: (301) 276-7788</h4>
               <div className={styles.navButtons}>
-                <Button variant="outline-success">SCHEDULE A DEMO</Button>
-                <Button variant="outline-info">CHECK OUR APPS</Button>
+                <NavLink to="/contact-us">
+                  <Button variant="outline-success">SCHEDULE A DEMO</Button>
+                </NavLink>
+                <NavLink to="/our-apps">
+                  <Button variant="outline-info">CHECK OUR APPS</Button>
+                </NavLink>
               </div>
             </div>
           </div>

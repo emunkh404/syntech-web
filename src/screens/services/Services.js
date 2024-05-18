@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Tab, Tabs, Image } from "react-bootstrap";
 import { Code, GraphUp, ShieldLock, People } from "react-bootstrap-icons";
 import CustomNavbar from "../../components/generic-components/navbar/CustomNavbar";
 import Footer from "../../components/generic-components/footer/CustomFooter";
 import styles from "./Services.module.css";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export default function Services() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const serviceKey = params.get("service");
+
+  const [activeKey, setActiveKey] = useState(serviceKey || "ecommerce");
+
+  useEffect(() => {
+    if (serviceKey) {
+      setActiveKey(serviceKey);
+    }
+  }, [serviceKey]);
+
   const services = [
     {
       key: "ecommerce",
@@ -56,14 +69,14 @@ export default function Services() {
     <>
       <CustomNavbar />
       <Container className={styles.servicesContainer}>
-        <Tabs defaultActiveKey="ecommerce" id="services-tabs" className={styles.verticalTabs}>
+        <Tabs activeKey={activeKey} onSelect={(k) => setActiveKey(k)} id="services-tabs" className={styles.verticalTabs}>
           {services.map((service) => (
             <Tab eventKey={service.key} title={service.title} key={service.key}>
               <div className={styles.serviceContent}>
                 <div className={styles.serviceText}>
                   <h3>{service.icon} {service.title}</h3>
                   <p>{service.description}</p>
-                  <Link to="/contact" className={styles.connectLink}>Connect us</Link>
+                  <Link to="/contact-us" className={styles.connectLink}>Connect us</Link>
                 </div>
                 <Image src={service.image} fluid className={styles.serviceImage} />
               </div>

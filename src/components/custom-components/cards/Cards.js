@@ -2,89 +2,34 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import styles from "./Cards.module.css"; // Make sure to include this
+import { Link } from "react-router-dom";
 
 export default function Cards() {
+  const services = [
+    { key: "ecommerce", title: "eCommerce", image: "/ecommerce.png", description: "A user-friendly interface suitable for retail businesses of any size." },
+    { key: "sales", title: "Sales", image: "/sales.png", description: "Efficiently send detailed and attractive quotations to potential customers, including product descriptions and images." },
+    { key: "crm", title: "CRM", image: "/crm.png", description: "Intuitive interface tailored for sales teams, offering a comprehensive dashboard for better insight into sales activities." },
+    { key: "accounting", title: "Accounting", image: "/accounting.png", description: "Easily generate professional invoices with advanced features like payment terms, multiple taxes, and discounts." },
+    { key: "project", title: "Project", image: "/project.png", description: "Streamlined interface for contemporary project management, providing all necessary information at your fingertips." },
+    { key: "inventory", title: "Inventory", image: "/inventory.png", description: "Odoo's double-entry inventory management ensures complete traceability from supplier to customer." }
+  ];
+
   return (
     <div className={styles.cardContainer}>
-      {/* Repeat your Card component as needed */}
-      <Card className={styles.card}>
-        <Card.Img variant="top" src="/ecommerce.png" />
-        <Card.Body>
-          <Card.Title>eCommerce</Card.Title>
-          <Card.Text>
-            A user-friendly interface suitable for retail businesses of any
-            size.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <Button variant="info">View</Button>
-        </Card.Footer>
-      </Card>
-      <Card className={styles.card}>
-        <Card.Img variant="top" src="/sales.png" />
-        <Card.Body>
-          <Card.Title>Sales</Card.Title>
-          <Card.Text>
-            Efficiently send detailed and attractive quotations to potential
-            customers, including product descriptions and images.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <Button variant="info">View</Button>
-        </Card.Footer>
-      </Card>
-      <Card className={styles.card}>
-        <Card.Img variant="top" src="/crm.png" />
-        <Card.Body>
-          <Card.Title>CRM</Card.Title>
-          <Card.Text>
-            Intuitive interface tailored for sales teams, offering a
-            comprehensive dashboard for better insight into sales activities.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <Button variant="info">View</Button>
-        </Card.Footer>
-      </Card>
-      <Card className={styles.card}>
-        <Card.Img variant="top" src="/accounting.png" />
-        <Card.Body>
-          <Card.Title>Accounting</Card.Title>
-          <Card.Text>
-            Easily generate professional invoices with advanced features like
-            payment terms, multiple taxes, and discounts.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <Button variant="info">View</Button>
-        </Card.Footer>
-      </Card>
-      <Card className={styles.card}>
-        <Card.Img variant="top" src="/project.png" />
-        <Card.Body>
-          <Card.Title>Project</Card.Title>
-          <Card.Text>
-            Streamlined interface for contemporary project management, providing
-            all necessary information at your fingertips.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <Button variant="info">View</Button>
-        </Card.Footer>
-      </Card>
-      <Card className={styles.card}>
-        <Card.Img variant="top" src="/inventory.png" />
-        <Card.Body>
-          <Card.Title>Inventory</Card.Title>
-          <Card.Text>
-            Odoo's double-entry inventory management ensures complete
-            traceability from supplier to customer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <Button variant="info">View</Button>
-        </Card.Footer>
-      </Card>      
+      {services.map(service => (
+        <Card className={styles.card} key={service.key}>
+          <Card.Img variant="top" src={service.image} />
+          <Card.Body>
+            <Card.Title>{service.title}</Card.Title>
+            <Card.Text>{service.description}</Card.Text>
+          </Card.Body>
+          <Card.Footer className={styles.cardFooter}>
+            <Link to={`/services?service=${service.key}`}>
+              <Button variant="info">View</Button>
+            </Link>
+          </Card.Footer>
+        </Card>
+      ))}
     </div>
   );
 }
