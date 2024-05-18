@@ -1,0 +1,60 @@
+.subscribeNavbar {
+    background-color: #22222e; /* SynTech primary blue color */
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .subscribeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the contents horizontally */
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .subscribeText {
+    color: white;
+    font-size: 2rem;
+    margin-right: 1rem;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .subscribeInputGroup {
+    flex: 1 1 auto;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .subscribeContainer {
+      flex-wrap: nowrap;
+    }
+  
+    .subscribeText {
+      text-align: left;
+      margin-right: 1rem;
+      flex: 0 0 auto;
+    }
+  
+    .subscribeInputGroup {
+      flex: 1 1 auto;
+      margin: 0;
+    }
+  }
+  
+  /* Responsive styles for small screens */
+  @media (max-width: 767px) {
+    .subscribeText {
+      margin-bottom: 10px;
+      margin-right: 0;
+      font-size: 1.5rem;
+    }
+  
+    .subscribeInputGroup {
+      width: 95%;
+    }
+  }
+  

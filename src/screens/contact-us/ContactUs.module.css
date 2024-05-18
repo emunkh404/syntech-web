@@ -1,0 +1,14 @@
+.contactSection {
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .mapContainer {
+    margin: 20px 0;
+    width: 100%;
+  }
+  

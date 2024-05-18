@@ -1,0 +1,121 @@
+.tabsContainer {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px; /* Adjust the value as needed */
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+  
+  .tabRow {
+    display: flex;
+  }
+  
+  .customNav {
+    width: 100%;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .customNavLink {
+    color: #000;
+    background-color: transparent; /* No background color */
+    border: none;
+    text-align: left;
+    padding: 10px 15px;
+  }
+  
+  .customNavLink.active {
+    color: #007bff; /* Active tab text color */
+    border-bottom: 3px solid #007bff; /* Active tab bottom border */
+  }
+  
+  .customNavLink:not(.active):hover {
+    background-color: #e9ecef;
+  }
+  
+  .contentCol {
+    padding-top: 20px;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .description {
+    width: 40%;
+    padding-right: 20px;
+    text-align: left;
+  }
+  
+  .imageContainer {
+    width: 60%;
+  }
+  
+  .image {
+    max-height: 100%;
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  .badgeContainer {
+    margin-top: 20px;
+  }
+  
+  .animatedBadge {
+    display: inline-block;
+    background-color: #22222e; /* SynTech primary blue color */
+    color: #fff;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+    animation: pulse 2s infinite;
+    border-radius: 5px; /* Box background */    
+  }
+  .animatedBadge :before hover {
+    background-color: #333; /* SynTech secondary blue color */
+  }
+  .strongText{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    color: aqua;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button.btn-primary {
+    background-color: #007bff; /* SynTech primary blue color */
+    border: none;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .description {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .imageContainer {
+      width: 100%;
+    }
+  
+    .image {
+      width: 100%;
+    }
+  }
+  
